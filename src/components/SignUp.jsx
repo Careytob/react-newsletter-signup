@@ -39,7 +39,7 @@ function SignUp({ onSubmit }) {
 
   return (
     <>
-      <main className='text-base sm:m-20 bg-white sm:rounded-3xl lg:m-50 xl:m-60'>
+      <main className='text-base sm:m-20 bg-white sm:rounded-3xl lg:m-55 xl:m-60'>
         <div className='sm:flex sm:flex-row justify-center gap-10 lg:gap-16 sm:p-4'>
           <div className='sm:hidden'>
             <img src='src/assets/illustration-sign-up-mobile.svg' className='w-full' />
