@@ -1,4 +1,8 @@
 import React, { useState } from 'react';
+import mobileIllustration from './assets/illustration-sign-up-mobile.svg';
+import desktopIllustration from './assets/illustration-sign-up-desktop.svg';
+import iconList from './assets/icon-list.svg';
+
 
 function SignUp({ onSubmit }) {
   const [formData, setFormData] = useState({
@@ -42,7 +46,7 @@ function SignUp({ onSubmit }) {
       <main className='text-base sm:m-20 bg-white sm:rounded-3xl lg:m-55 xl:m-60'>
         <div className='sm:flex sm:flex-row justify-center gap-10 lg:gap-16 sm:p-4'>
           <div className='sm:hidden'>
-            <img src='src/assets/illustration-sign-up-mobile.svg' className='w-full' />
+            <img src={mobileIllustration} className='w-full' />
           </div>
 
           <div className='mt-5 pl-10 lg:mt-16'>
@@ -56,15 +60,15 @@ function SignUp({ onSubmit }) {
 
             <div className='mt-5 flex flex-col gap-5'>
               <div className='flex items-start'>
-                <img src='src/assets/icon-list.svg' className='mr-4' />
+                <img src={iconList} className='mr-4' />
                 <span className='lg:pl-5'>Product discovery and building what matters</span>
               </div>
               <div className='flex items-start'>
-                <img src='src/assets/icon-list.svg' className='mr-4' />
+                <img src={iconList} className='mr-4' />
                 <span className='lg:pl-5'>Measuring to ensure updates are a success</span>
               </div>
               <div className='flex items-start'>
-                <img src='src/assets/icon-list.svg' className='mr-4' />
+                <img src={iconList} className='mr-4' />
                 <span className='lg:pl-5'> And much more!</span>
               </div>
             </div>
@@ -100,7 +104,7 @@ function SignUp({ onSubmit }) {
           </div>
 
           <div className='hidden sm:block'>
-            <img src='src/assets/illustration-sign-up-desktop.svg' className='sm:rounded-none' />
+            <img src={desktopIllustration} className='sm:rounded-none' />
           </div>
         </div>
       </main>

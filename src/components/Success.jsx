@@ -1,10 +1,11 @@
 import React from 'react'
+import successIcon from './assets/icon-success.svg';
 
 function Success({email}) {
   return (
       <div className='bg-white sm:mt-0 sm:m-60 sm:rounded-3xl lg:m-[310px] xl:m-[400px] p-10 sm:p-14 lg:p-16 xl:p-[140px]'>
       <div className=''>
-        <img src='src/assets/icon-success.svg' className='pt-20  sm:pt-0 lg:pt-0 '/>
+        <img src={successIcon} className='pt-20  sm:pt-0 lg:pt-0 '/>
           <h1 className='text-4xl sm:text-[55px] lg:text-[50px] xl:text-[50px] sm:leading-none font-bold pt-10 '>Thanks for subscribing!</h1>
         <p className='pt-10 '>A confirmation email has been sent to <span className='font-bold'>{email}</span>. 
           Please open it and click the button inside to confirm your subscription.
